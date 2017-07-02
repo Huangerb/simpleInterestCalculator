@@ -12,6 +12,7 @@ class SImpleViewController: UIViewController {
     @IBOutlet weak var principle: UITextField!
     @IBOutlet weak var annualRate: UITextField!
     @IBOutlet weak var years: UITextField!
+    var totalInterestFinal: Double!
     
 
     override func viewDidLoad() {
@@ -36,6 +37,7 @@ class SImpleViewController: UIViewController {
             let totalInterest: Double? = principleInt! * annualRateInt! * yearsInt!
             
             print(totalInterest ?? 0 )
+            totalInterestFinal = totalInterest
         }
     }
 
@@ -46,14 +48,12 @@ class SImpleViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dvc = segue.destination as! SecondViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-     
-        myAnswer2 = myAnswer1
+        let dvc = segue.destination as! SImpleSecondViewController
+        dvc.totalInterestDisplayed = totalInterestFinal
         
-        
-    }  */
+    }
 
 
 

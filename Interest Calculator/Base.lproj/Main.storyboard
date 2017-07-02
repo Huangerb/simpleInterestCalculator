@@ -106,6 +106,7 @@
                                 </state>
                                 <connections>
                                     <action selector="calculateInterest:" destination="I4D-0f-led" eventType="touchUpInside" id="6cP-eh-61p"/>
+                                    <segue destination="a8M-TB-k5n" kind="show" id="GA0-r1-TWh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -120,6 +121,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acW-Fe-2pI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1724" y="484.40779610194909"/>
+        </scene>
+        <!--Imple Second View Controller-->
+        <scene sceneID="bzm-cI-VNo">
+            <objects>
+                <viewController id="a8M-TB-k5n" customClass="SImpleSecondViewController" customModule="Interest_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iaG-2J-i4O"/>
+                        <viewControllerLayoutGuide type="bottom" id="0g7-gC-uCt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FPM-5e-mTc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6i-Ic-8YQ">
+                                <rect key="frame" x="108" y="286" width="158" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerDisplayed" destination="U6i-Ic-8YQ" id="mjw-lm-RUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuN-sN-mHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2472.8000000000002" y="483.50824587706148"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xSf-P6-QvN">
