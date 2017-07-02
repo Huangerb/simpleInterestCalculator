@@ -17,8 +17,6 @@ class SImpleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,14 +25,35 @@ class SImpleViewController: UIViewController {
     }
     
     @IBAction func calculateInterest(_ sender: Any) {
-        let principleInt: Double? = Double(principle.text!)
-        let annualRateInt: Double? = Double(annualRate.text!)
-        let yearsInt: Double? = Double(years.text!)
-        let totalInterest: Double? = principleInt! * annualRateInt! * yearsInt!
-        
-        
-        print(totalInterest ?? 0 )
+        if (principle.text?.isEmpty)! || (annualRate.text?.isEmpty)! || (years.text?.isEmpty)!
+        {
+            displayEmptyMessage(message: "You must fill in all of the boxes")
+        }
+        else{
+            let principleInt: Double? = Double(principle.text!)
+            let annualRateInt: Double? = Double(annualRate.text!)
+            let yearsInt: Double? = Double(years.text!)
+            let totalInterest: Double? = principleInt! * annualRateInt! * yearsInt!
+            
+            print(totalInterest ?? 0 )
+        }
     }
+
+    func displayEmptyMessage(message: String)
+    {
+        let alert = UIAlertController(title: "Error", message: "You must fill in all of the boxes", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Go back", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+  /*  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! SecondViewController
+        
+     
+        myAnswer2 = myAnswer1
+        
+        
+    }  */
 
 
 
