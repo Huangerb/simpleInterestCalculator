@@ -13,7 +13,7 @@ class SImpleViewController: UIViewController {
     @IBOutlet weak var annualRate: UITextField!
     @IBOutlet weak var years: UITextField!
     var totalInterestFinal: Double!
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class SImpleViewController: UIViewController {
             let principleInt: Double? = Double(principle.text!)
             let annualRateInt: Double? = Double(annualRate.text!)
             let yearsInt: Double? = Double(years.text!)
-            let totalInterest: Double? = principleInt! * annualRateInt! * yearsInt!
+            let totalInterest: Double? = principleInt! * (annualRateInt! / 100) * yearsInt!
             
             print(totalInterest ?? 0 )
             totalInterestFinal = totalInterest
