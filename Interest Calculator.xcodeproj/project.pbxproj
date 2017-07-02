@@ -14,6 +14,8 @@
 		5210F7561F0933B300CB5ED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5210F7541F0933B300CB5ED3 /* LaunchScreen.storyboard */; };
 		5210F7611F0933B300CB5ED3 /* Interest_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210F7601F0933B300CB5ED3 /* Interest_CalculatorTests.swift */; };
 		5210F76C1F0933B300CB5ED3 /* Interest_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210F76B1F0933B300CB5ED3 /* Interest_CalculatorUITests.swift */; };
+		5210F77E1F093D7B00CB5ED3 /* SImpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210F77D1F093D7B00CB5ED3 /* SImpleViewController.swift */; };
+		5210F7801F093D8900CB5ED3 /* CompoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210F77F1F093D8900CB5ED3 /* CompoundViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5210F7671F0933B300CB5ED3 /* Interest CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Interest CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5210F76B1F0933B300CB5ED3 /* Interest_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest_CalculatorUITests.swift; sourceTree = "<group>"; };
 		5210F76D1F0933B300CB5ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5210F77D1F093D7B00CB5ED3 /* SImpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SImpleViewController.swift; path = ../SImpleViewController.swift; sourceTree = "<group>"; };
+		5210F77F1F093D8900CB5ED3 /* CompoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompoundViewController.swift; path = ../CompoundViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		5210F74A1F0933B300CB5ED3 /* Interest Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				5210F74B1F0933B300CB5ED3 /* AppDelegate.swift */,
+				5210F77F1F093D8900CB5ED3 /* CompoundViewController.swift */,
+				5210F77D1F093D7B00CB5ED3 /* SImpleViewController.swift */,
 				5210F74D1F0933B300CB5ED3 /* ViewController.swift */,
+				5210F74B1F0933B300CB5ED3 /* AppDelegate.swift */,
 				5210F74F1F0933B300CB5ED3 /* Main.storyboard */,
 				5210F7521F0933B300CB5ED3 /* Assets.xcassets */,
 				5210F7541F0933B300CB5ED3 /* LaunchScreen.storyboard */,
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5210F74E1F0933B300CB5ED3 /* ViewController.swift in Sources */,
+				5210F77E1F093D7B00CB5ED3 /* SImpleViewController.swift in Sources */,
 				5210F74C1F0933B300CB5ED3 /* AppDelegate.swift in Sources */,
+				5210F7801F093D8900CB5ED3 /* CompoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
