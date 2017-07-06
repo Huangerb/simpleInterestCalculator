@@ -15,8 +15,8 @@
 		5210F7611F0933B300CB5ED3 /* Interest_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210F7601F0933B300CB5ED3 /* Interest_CalculatorTests.swift */; };
 		5210F76C1F0933B300CB5ED3 /* Interest_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210F76B1F0933B300CB5ED3 /* Interest_CalculatorUITests.swift */; };
 		5210F77E1F093D7B00CB5ED3 /* SImpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210F77D1F093D7B00CB5ED3 /* SImpleViewController.swift */; };
-		5210F7801F093D8900CB5ED3 /* CompoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210F77F1F093D8900CB5ED3 /* CompoundViewController.swift */; };
 		5210F7861F0959FE00CB5ED3 /* SImpleSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5210F7851F0959FE00CB5ED3 /* SImpleSecondViewController.swift */; };
+		5210F78A1F09CEA300CB5ED3 /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = 5210F7891F09CEA300CB5ED3 /* Extensions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		5210F76B1F0933B300CB5ED3 /* Interest_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest_CalculatorUITests.swift; sourceTree = "<group>"; };
 		5210F76D1F0933B300CB5ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5210F77D1F093D7B00CB5ED3 /* SImpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SImpleViewController.swift; path = ../SImpleViewController.swift; sourceTree = "<group>"; };
-		5210F77F1F093D8900CB5ED3 /* CompoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompoundViewController.swift; path = ../CompoundViewController.swift; sourceTree = "<group>"; };
 		5210F7851F0959FE00CB5ED3 /* SImpleSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SImpleSecondViewController.swift; sourceTree = "<group>"; };
+		5210F7891F09CEA300CB5ED3 /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Extensions; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 		5210F74A1F0933B300CB5ED3 /* Interest Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				5210F77F1F093D8900CB5ED3 /* CompoundViewController.swift */,
+				5210F7891F09CEA300CB5ED3 /* Extensions */,
 				5210F77D1F093D7B00CB5ED3 /* SImpleViewController.swift */,
 				5210F7851F0959FE00CB5ED3 /* SImpleSecondViewController.swift */,
 				5210F74D1F0933B300CB5ED3 /* ViewController.swift */,
@@ -243,6 +243,7 @@
 			files = (
 				5210F7561F0933B300CB5ED3 /* LaunchScreen.storyboard in Resources */,
 				5210F7531F0933B300CB5ED3 /* Assets.xcassets in Resources */,
+				5210F78A1F09CEA300CB5ED3 /* Extensions in Resources */,
 				5210F7511F0933B300CB5ED3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +273,6 @@
 				5210F7861F0959FE00CB5ED3 /* SImpleSecondViewController.swift in Sources */,
 				5210F77E1F093D7B00CB5ED3 /* SImpleViewController.swift in Sources */,
 				5210F74C1F0933B300CB5ED3 /* AppDelegate.swift in Sources */,
-				5210F7801F093D8900CB5ED3 /* CompoundViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
